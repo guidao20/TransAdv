@@ -1,0 +1,22 @@
+AdvAttack:
+    attack_type: fgsm     # chioces=[none, pgd, fgsm], type=str
+    # type=int
+    attack_iters: 10 
+    # type=float  
+    epsilon: 0.03 
+    # type=float
+    alpha: 0.002 
+AdvTraining:
+    # type=int
+    repeat_num: 1 
+ModelTraining:
+    # chioces=[VGG19, Resnet18], type=str
+    model: VGG19
+    # type = str
+    dataset: CK+
+    fold: 1
+    bs: 128
+    lr: 0.0002
+    epoch: 100
+    path: model\VGG19\Standard_Training
+
